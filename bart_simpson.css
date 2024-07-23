@@ -246,4 +246,11 @@
 }
 .detbart1{
     background-color: red;
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    top: 14px;
+    left: -10px;
 }
