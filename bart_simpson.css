@@ -1,0 +1,246 @@
+.head{
+    background-color: rgb(255, 217, 0);
+    height: 76px;
+    width: 64px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position:absolute;
+    top: 660px;
+    left: 1000px;
+    border: 2px black solid;
+}
+/* cabelos */
+/* fio 1 */
+.fio1{
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 20px solid rgb(255, 217, 0);
+    position: absolute;
+    bottom: 75px;
+    left: -3px;
+    transform: rotate(-16deg);
+}
+.fio1::before{
+    content:"fio1";
+    background-color: transparent;
+    position:absolute;
+    border-top: black 2px solid;
+    width: 22px;
+    transform: rotate(-73deg);
+    color: transparent;
+    left:-6px;
+    top:4px;
+}
+.linhabart1{
+    background-color: transparent;
+    border-top: 2px black solid;
+    height: 0px;
+    width: 13px;
+    position: absolute;
+    transform: rotate(77deg);
+    top: 8px;
+    left: -5px;
+}
+/* fio 2 */
+.fio2{
+    width: 0; 
+    height: 0; 
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 20px solid rgb(255, 217, 0);
+    position: absolute;
+    bottom: 75px;
+    left: 5px;
+}
+.fio2::before{
+    content:"fio1";
+    background-color: transparent;
+    position:absolute;
+    border-top: black 2px solid;
+    width: 15px;
+    transform: rotate(-68deg);
+    color: transparent;
+    left:-2px;
+    top:2px;
+}
+.linhabart2{
+    background-color: transparent;
+    border-top: 2px black solid;
+    height: 0px;
+    width: 16px;
+    position: absolute;
+    transform: rotate(73deg);
+    top: 8px;
+    left: -5px;
+}
+/* fio 3 */
+.fio3{
+    width: 0; 
+    height: 0; 
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 20px solid rgb(255, 217, 0);
+    position: absolute;
+    bottom: 75px;
+    left: 15px;
+}
+.fio3::before{
+    content:"fio1";
+    background-color: transparent;
+    position:absolute;
+    border-top: black 2px solid;
+    width: 15px;
+    transform: rotate(-68deg);
+    color: transparent;
+    left:-2px;
+    top:2px;
+}
+.linhabart3{
+    background-color: transparent;
+    border-top: 2px black solid;
+    height: 0px;
+    width: 16px;
+    position: absolute;
+    transform: rotate(73deg);
+    top: 8px;
+    left: -6px;
+}
+/* fio 4 */
+.fio4{
+    width: 0; 
+    height: 0; 
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 20px solid rgb(255, 217, 0);
+    position: absolute;
+    bottom: 75px;
+    left: 24px;
+}
+.fio4::before{
+    content:"fio1";
+    background-color: transparent;
+    position:absolute;
+    border-top: black 2px solid;
+    width: 16px;
+    transform: rotate(-68deg);
+    color: transparent;
+    left:-2px;
+    top:2px;
+}
+.linhabart4{
+    background-color: transparent;
+    border-top: 2px black solid;
+    height: 0px;
+    width: 16px;
+    position: absolute;
+    transform: rotate(73deg);
+    top: 8px;
+    left: -6px;
+}
+/* fio 5 */
+.fio5{
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 20px solid rgb(255, 217, 0);
+    position: absolute;
+    bottom: 75px;
+    left:35px;
+}
+.fio5::before{
+    content:"fio1";
+    background-color: transparent;
+    position:absolute;
+    border-top: black 2px solid;
+    width: 18px;
+    transform: rotate(-68deg);
+    color: transparent;
+    left:-4px;
+    top:2px;
+}
+.linhabart5{
+    background-color: transparent;
+    border-top: 2px black solid;
+    height: 0px;
+    width: 16px;
+    position: absolute;
+    transform: rotate(73deg);
+    top: 8px;
+    left: -6px;
+}
+/* fio 6 */
+.fio6{
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 20px solid rgb(255, 217, 0);
+    position: absolute;
+    bottom: 75px;
+    left:45px;
+}
+.fio6::before{
+    content:"fio1";
+    background-color: transparent;
+    position:absolute;
+    border-top: black 2px solid;
+    width: 16px;
+    transform: rotate(-68deg);
+    color: transparent;
+    left:-3px;
+    top:2px;
+}
+.linhabart6{
+    background-color: transparent;
+    border-top: 2px black solid;
+    height: 0px;
+    width: 16px;
+    position: absolute;
+    transform: rotate(73deg);
+    top: 8px;
+    left: -6px;
+}
+/* fio 7 */
+.fio7{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 20px solid rgb(255, 217, 0);
+    position: absolute;
+    bottom: 75px;
+    left:57px;
+    transform:rotate(16deg)
+}
+.fio7::before{
+    content:"fio1";
+    background-color: transparent;
+    position:absolute;
+    border-top: black 2px solid;
+    width: 17px;
+    transform: rotate(-74deg);
+    color: transparent;
+    left:-2px;
+    top:1px;
+}
+.linhabart7{
+    content:"fio1";
+    background-color: transparent;
+    position:absolute;
+    border-top: black 2px solid;
+    width: 18px;
+    transform: rotate(72deg);
+    color: transparent;
+    left:-6px;
+    top:10px;
+}
+.olhobart1{
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    position: absolute;
+}
