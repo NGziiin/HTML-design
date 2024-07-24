@@ -2,8 +2,8 @@
     background-color: rgb(255, 217, 0);
     height: 76px;
     width: 64px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     position:absolute;
     top: 660px;
     left: 1000px;
@@ -237,20 +237,105 @@
     left:-6px;
     top:10px;
 }
+/* primeiro olho do bart */
 .olhobart1{
     background-color: white;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
     position: absolute;
+    border: 1px black solid;
+    top: 4px;
+    right: -6px;
 }
+.olhobart1::before{
+    content:"sou lindo";
+    background-color: black;
+    color: transparent;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    top: 11px;
+    left: 11px;
+}
+/* pequeno detalhe no rosto dos simpsons */
 .detbart1{
-    background-color: red;
+    background-color: rgb(255, 217, 0);
     width: 20px;
     height: 12px;
     position: absolute;
     border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    top: 14px;
-    left: -10px;
+    border-bottom-left-radius: 5px;
+    top: 10px;
+    left: -7px;
+    border-left: 2px black solid;
+    border-bottom: 2px black solid;
+    border-top: 2px black solid;
+}
+.detbart1::before{
+    content: "bart";
+    position: absolute;
+    width: 18px;
+    height: 10px;
+    background-color: rgb(255, 217, 0);
+    color: transparent;
+    bottom: 10px;
+    left: 5px;
+}
+/* nariz */
+.narizbart{
+    background-color: rgb(255, 217, 0);
+    position: absolute;
+    height: 12px;
+    width: 27px;
+    top: 24px;
+    left: 7px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-left: black solid 1px;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+}
+.narizbart::before{
+    content:"p";
+    background-color: rgb(255, 217, 0);
+    width: 18px;
+    height: 10px;
+    color: transparent;
+    position: absolute;
+    top: 7px;
+    left: 13px;
+}
+/* olho 2 do bart */
+.olhobart2{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    border-radius: 100%;
+    bottom: 7px;
+    left: 13px;
+    border: 1px black solid;
+}
+.olhobart2::before{
+    content:"flamengo";
+    background-color: black;
+    color: transparent;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    top: 12px;
+    left: 12px;
+}
+.bocabart{
+    background-color: red;
+    width: 20px;
+    height: 14px;
+    position: absolute;
+    top: 57px;
+    left: 0px;
+    border-left: 2px black solid;
+    border-bottom: 2px black solid;
 }
