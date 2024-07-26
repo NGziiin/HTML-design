@@ -1,8 +1,8 @@
 .head{
     background-color: rgb(255, 217, 0);
-    height: 70px;
+    height: 75px;
     width: 64px;
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 6px;
     border-bottom-right-radius: 0px;
     position:absolute;
     top: 660px;
@@ -267,7 +267,7 @@
     position: absolute;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 5px;
-    top: 10px;
+    top: 16px;
     left: -7px;
     border-left: 2px black solid;
     border-bottom: 2px black solid;
@@ -339,7 +339,7 @@
     border-right: 2px black solid;
     border-top: 2px black solid;
     border-bottom: 2px black solid;
-    top: 20px;
+    top: 30px;
     left: 44px;
 }
 .orelhabart::before{
@@ -375,17 +375,60 @@
     bottom: 3px;
     left:1px;
 }
+/* boca do bart */
 .pescoçobart{
     background-color: rgb(255, 217, 0);
     width: 34px;
     height: 33px;
     position: absolute;
-    top: 71px;
+    top: 75px;
     left: 28px;
     border-left: 2px black solid;
     border-right: 2px black solid;
     border-bottom: 2px black solid;
 }
 .pescoçobart::before{
-
+    content: "s";
+    background-color: rgb(255, 217, 0);
+    color: transparent;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    bottom: 21px;
+    left: -13px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+/* linha da boca */
+.linhabartboca{
+    background-color: rgb(255, 217, 0);
+    width: 26px;
+    height: 10px;
+    position: absolute;
+    border-bottom: 2px solid black;
+    top: -10px;
+    left: -15px;
+}
+.linhabartboca::before{
+    content: "t";
+    background-color: rgb(255, 217, 0);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    color: transparent;
+    top: 20px;
+    left: 15px;
+}
+.linhabartboca2{
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 100%;
+    border-right: 2px solid black;
+    left: 16px;
+    top: 8px;
+    transform: rotate(-40deg)
 }
