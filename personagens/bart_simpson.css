@@ -503,6 +503,17 @@
     left: 4px;
 }
 /* iniciando o corpo do bart */
+
+.mangabart1{
+    background-color: rgb(255, 68, 0);
+    position: absolute;
+    width: 20px;
+    height: 60px;
+    top: 75px;
+    left: 30px;
+    border: 2px black solid;
+}
+
 .corpo{
     background-color: rgb(255, 68, 0);
     position: absolute;
