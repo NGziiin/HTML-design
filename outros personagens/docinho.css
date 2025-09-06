@@ -1,4 +1,4 @@
-body{
+body {
     background-color: rgb(46, 139, 87);
     height: 400px;
     width: 400px;
@@ -6,12 +6,242 @@ body{
     align-items: center;
     justify-content: center;
     display: flex;
+    position: relative; /* necessário para posicionamento absoluto dos filhos */
 }
 
-.cabeca{
+.personagem {
+  position: relative;
+  width: 327px; /* ajuste conforme necessário */
+  height: 193px;
+  transform: translate(0, 0); /* aqui você move tudo junto */
+}
+
+
+/* cabelo atrás */
+.cabeloatras1 {
+    background-color: black;
+    height: 104px;
+    width: 90px;
+    border-bottom-left-radius: 100%;
+    position: absolute;
+    transform: skewY(13deg);
+    top: 60px;
+    z-index: 1;
+}
+
+.cabeloatras2 {
+    background-color: black;
+    height: 104px;
+    width: 80px;
+    position: absolute;
+    left: 247px;
+    top: 60px;
+    border-bottom-right-radius: 100%;
+    transform: skewY(-10deg);
+    box-shadow: 10px 8px 5px 5px rgb(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+/* cabeça */
+.cabeca {
     background-color: bisque;
+    width: 260px;
+    height: 192px;
+    border-radius: 100%;
+    position: absolute;
+    box-shadow: 10px 8px 5px 5px rgb(0, 0, 0, 0.1);
+    left: 35px;
+    z-index: 2;
+}
+
+/* olhos */
+.Olho1,
+.Olho2 {
+    background-color: white;
+    height: 140px;
+    width: 120px;
+    position: absolute;
+    border-radius: 100%;
+    z-index: 3;
+}
+
+.Olho1 {
+    top: 26px;
+    left: 0px;
+}
+
+.Olho2 {
+    bottom: 30px;
+    left: 139px;
+    transform: rotate(-7deg);
+}
+
+.Olho1::before,
+.Olho2::before {
+    background-color: #a4de92;
+    content: 'p';
+    color: transparent;
+    height: 128px;
+    width: 100px;
+    position: absolute;
+    border-radius: 100%;
+    top: 8px;
+    z-index: 4;
+}
+
+.Olho1::before {
+    left: 20px;
+}
+
+.iris1,
+.iris2 {
+    background-color: black;
+    height: 110px;
+    width: 90px;
+    position: absolute;
+    border-radius: 100%;
+    top: 20px;
+    z-index: 4;
+}
+
+.iris1 {
+    left: 30px;
+}
+
+.iris2 {
+    left: 0px;
+}
+
+.iris1::before,
+.iris2::before {
+    content: 'a';
+    background-color: white;
+    color: transparent;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 100%;
+    z-index: 5;
+}
+
+.iris1::before {
+    left: 42px;
+    top: 28px;
+}
+
+.iris2::before {
+    left: 8px;
+    top: 28px;
+}
+
+/* detalhes */
+.detalhe1,
+.detalhe2 {
+    background-color: bisque;
+    height: 20px;
+    width: 80px;
+    position: absolute;
+    z-index: 4;
+}
+
+.detalhe1 {
+    transform: rotate(0deg);
+    left: 46px;
+    top: 40px;
+}
+
+.detalhe2 {
+    transform: rotate(0deg);
+    left: 132px;
+    top: 30px;
+}
+
+/* cabelo da frente */
+.cabelofrente {
+    background-color: black;
+    width: 54px;
+    height: 51px;
+    border-radius: 0%;
+    clip-path: polygon(5% 38%, 47% 40%, 52% 14%, 44% 15%, 34% 17%, 28% 19%, 20% 23%, 11% 30%);
+    position: absolute;
+    border-radius: 100%;
+    transform: scale(5.1);
+    left: 98px;
+    top: 66px;
+    z-index: 6;
+}
+
+.cabelofrente-reflexo{
+    background-color: black;
+    width: 54px;
+    height: 51px;
+    border-radius: 0%;
+    clip-path: polygon(5% 38%, 47% 40%, 52% 14%, 44% 15%, 34% 17%, 28% 19%, 20% 23%, 11% 30%);
+    position: fixed;
+    transform: scale(5.1) scaleX(-1);
+    left: 140px;
+    top: 66px;
+    z-index: 7;
+}
+
+.detalhecabelo2{
     width: 50px;
     height: 50px;
+    position: absolute;
+    background-color: black;
+    left: 100px;
+    top:4px;
+    z-index: 8;
+}
+.detalhecabelo{
+    width: 26px;
+    height: 42px;
+    position: absolute;
+    background-color: bisque;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    left: 116px;
+    top: 24px;
+    z-index: 9;
+}
+.detalhecabelo3, .detalhecabelo4{
+    width: 26px;
+    height: 42px;
+    position: absolute;
+    background-color: black;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 10;
+}
+.detalhecabelo3{
+    left: 166px;
+    bottom: 180px;
+}
+.detalhecabelo4{
+    left: 155px;
+    bottom: 175px;
+}
+.boca{
+    background-color: transparent;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 146px;
+    left: 122px;
     border-radius: 100%;
-    position: relative;
+    border-bottom: 2px black solid;
+    z-index: 10;
+}
+
+.detalhe1, .detalhe2, .boca{
+    transition: all 0.5s ease;
+}
+.personagem:hover .detalhe1{
+    transform: rotate(22deg);
+    top:53px;
+}
+.personagem:hover .detalhe2{
+    transform: rotate(-22deg);
+    top: 53px;
+}
+.personagem:hover .boca{
+    border-radius: 0%;
 }
