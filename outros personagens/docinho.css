@@ -126,12 +126,12 @@ body {
 
 .iris1::before {
     left: 42px;
-    top: 28px;
+    top: 40px;
 }
 
 .iris2::before {
     left: 8px;
-    top: 28px;
+    top: 40px;
 }
 
 /* detalhes */
@@ -231,7 +231,9 @@ body {
     z-index: 10;
 }
 
-.detalhe1, .detalhe2, .boca{
+/* animação */
+
+.detalhe1, .detalhe2, .boca, .iris1::before, .iris2::before{
     transition: all 0.5s ease;
 }
 .personagem:hover .detalhe1{
@@ -244,4 +246,14 @@ body {
 }
 .personagem:hover .boca{
     border-radius: 0%;
+}
+
+.personagem:hover .iris1::before{
+    left: 42px;
+    top: 28px;
+}
+
+.personagem:hover .iris2::before{
+    left: 8px;
+    top: 28px;
 }
